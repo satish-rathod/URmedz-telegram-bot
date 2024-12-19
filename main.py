@@ -149,12 +149,24 @@ def listen_to_event_stream(camera):
 
         except requests.exceptions.RequestException as e:
             logger.error(f"Network error with {camera['name']}: {e}")
-            send_telegram_message(f"{camera['name']} camera is offline")
+            if not is_camera_connected(camera):
+                send_telegram_message(f"{camera['name']} camera is offline")
             time.sleep(10)
         except Exception as e:
             logger.error(f"Unexpected error in {camera['name']} stream: {e}")
-            # send message to telegram
             time.sleep(10)
+
+def is_camera_connected(camera):
+    """Check if the camera connection has been successfully established."""
+    try:
+        response = requests.get(
+            camera["url"], 
+            auth=requests.auth.HTTPDigestAuth(*camera["auth"]), 
+            timeout=10
+        )
+        return response.status_code == 200
+    except requests.exceptions.RequestException:
+        return False
 
 def main():
     """Main function to initialize and start monitoring."""

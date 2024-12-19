@@ -13023,3 +13023,412 @@ Code=VideoMotion;action=Start;index=0;data={
 2024-12-17 17:29:45,624 - DEBUG - Persistent queue saved to disk.
 2024-12-17 17:30:09,464 - DEBUG - Persistent queue saved to disk.
 2024-12-17 17:30:09,464 - INFO - Monitoring stopped by user
+2024-12-19 09:52:58,794 - DEBUG - Program started
+2024-12-19 09:52:58,794 - DEBUG - Starting main function
+2024-12-19 09:52:58,794 - INFO - Loaded 0 unsent messages from queue.json
+2024-12-19 09:52:58,795 - DEBUG - Queue processing thread started
+2024-12-19 09:52:58,795 - DEBUG - Starting thread for FMCG wall
+2024-12-19 09:52:58,795 - INFO - Connecting to FMCG wall event stream...
+2024-12-19 09:52:58,795 - DEBUG - Starting thread for outdoor entrence
+2024-12-19 09:52:58,797 - DEBUG - Starting new HTTP connection (1): 192.168.1.202:80
+2024-12-19 09:52:58,797 - INFO - Connecting to outdoor entrence event stream...
+2024-12-19 09:52:58,798 - DEBUG - Starting new HTTP connection (1): 192.168.1.205:80
+2024-12-19 09:52:59,234 - DEBUG - http://192.168.1.202:80 "GET /cgi-bin/eventManager.cgi?action=attach&codes=%5BAlarmLocal%2CVideoMotion%5D&heartbeat=5 HTTP/11" 401 0
+2024-12-19 09:52:59,236 - DEBUG - Resetting dropped connection: 192.168.1.202
+2024-12-19 09:52:59,242 - DEBUG - http://192.168.1.205:80 "GET /cgi-bin/eventManager.cgi?action=attach&codes=%5BAlarmLocal%2CVideoMotion%5D&heartbeat=5 HTTP/11" 401 0
+2024-12-19 09:52:59,244 - DEBUG - Resetting dropped connection: 192.168.1.205
+2024-12-19 09:52:59,481 - DEBUG - http://192.168.1.202:80 "GET /cgi-bin/eventManager.cgi?action=attach&codes=%5BAlarmLocal%2CVideoMotion%5D&heartbeat=5 HTTP/11" 200 None
+2024-12-19 09:52:59,482 - DEBUG - Response status code: 200
+2024-12-19 09:52:59,482 - INFO - Connected to FMCG wall event stream
+2024-12-19 09:52:59,568 - DEBUG - http://192.168.1.205:80 "GET /cgi-bin/eventManager.cgi?action=attach&codes=%5BAlarmLocal%2CVideoMotion%5D&heartbeat=5 HTTP/11" 200 None
+2024-12-19 09:52:59,569 - DEBUG - Response status code: 200
+2024-12-19 09:52:59,569 - INFO - Connected to outdoor entrence event stream
+2024-12-19 09:53:09,815 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:09,815 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:09,815 - DEBUG - Parsing buffer: --myboundary
+
+2024-12-19 09:53:09,816 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:09,816 - DEBUG - Received line: Content-Length: 147
+2024-12-19 09:53:09,816 - DEBUG - Received line: Code=VideoMotion;action=Start;index=0;data={
+2024-12-19 09:53:09,816 - DEBUG - Received line: 	"LocaleTime":	"2024-12-19 12:23:00",
+2024-12-19 09:53:09,817 - DEBUG - Received line: 	"UTC":	1734582180,
+2024-12-19 09:53:09,817 - DEBUG - Received line: 	"Name":	"IPC",
+2024-12-19 09:53:09,817 - DEBUG - Received line: 	"SmartMotionEnable":	true
+2024-12-19 09:53:09,817 - DEBUG - Received line: }
+2024-12-19 09:53:09,817 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:09,817 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:09,817 - DEBUG - Parsing buffer: Content-Type: text/plain
+Content-Length: 147
+Code=VideoMotion;action=Start;index=0;data={
+	"LocaleTime":	"2024-12-19 12:23:00",
+	"UTC":	1734582180,
+	"Name":	"IPC",
+	"SmartMotionEnable":	true
+}
+--myboundary
+
+2024-12-19 09:53:09,818 - INFO - Motion detected by FMCG wall
+2024-12-19 09:53:09,818 - INFO - Processing message: 
+🚨 Motion Detected at urmedz galaxy store!
+
+📅 Local Time: 2024-12-19 12:23:00
+📍 Name: FMCG wall
+🤖 Smart Motion Enabled: True
+
+2024-12-19 09:53:09,819 - DEBUG - Persistent queue saved to disk.
+2024-12-19 09:53:09,820 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:09,822 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2024-12-19 09:53:09,823 - DEBUG - Received line: Content-Length: 9
+2024-12-19 09:53:09,823 - DEBUG - Received line: Heartbeat
+2024-12-19 09:53:09,823 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:09,824 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:09,824 - DEBUG - Parsing buffer: Content-Type: text/plain
+Content-Length: 9
+Heartbeat
+--myboundary
+
+2024-12-19 09:53:09,824 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:09,824 - DEBUG - Received line: Content-Length: 9
+2024-12-19 09:53:09,824 - DEBUG - Received line: Heartbeat
+2024-12-19 09:53:09,825 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:09,825 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:09,825 - DEBUG - Parsing buffer: Content-Type: text/plain
+Content-Length: 9
+Heartbeat
+--myboundary
+
+2024-12-19 09:53:09,825 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:09,825 - DEBUG - Received line: Content-Length: 9
+2024-12-19 09:53:09,825 - DEBUG - Received line: Heartbeat
+2024-12-19 09:53:09,826 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:09,826 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:09,826 - DEBUG - Parsing buffer: Content-Type: text/plain
+Content-Length: 9
+Heartbeat
+--myboundary
+
+2024-12-19 09:53:09,826 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:09,827 - DEBUG - Received line: Content-Length: 146
+2024-12-19 09:53:10,987 - DEBUG - https://api.telegram.org:443 "POST /bot7802711134:AAELuoLMl9mXncmOuAdYjU_Kw4eHKCdYkT8/sendMessage HTTP/11" 200 419
+2024-12-19 09:53:10,988 - INFO - Message sent to Telegram successfully
+2024-12-19 09:53:10,989 - DEBUG - Persistent queue saved to disk.
+2024-12-19 09:53:18,503 - DEBUG - Received line: Code=VideoMotion;action=Stop;index=0;data={
+2024-12-19 09:53:18,504 - DEBUG - Received line: 	"LocaleTime":	"2024-12-19 12:23:10",
+2024-12-19 09:53:18,504 - DEBUG - Received line: 	"UTC":	1734582190,
+2024-12-19 09:53:18,504 - DEBUG - Received line: 	"Name":	"IPC",
+2024-12-19 09:53:18,505 - DEBUG - Received line: 	"SmartMotionEnable":	true
+2024-12-19 09:53:18,505 - DEBUG - Received line: }
+2024-12-19 09:53:18,505 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:18,505 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:18,506 - DEBUG - Parsing buffer: Content-Type: text/plain
+Content-Length: 146
+Code=VideoMotion;action=Stop;index=0;data={
+	"LocaleTime":	"2024-12-19 12:23:10",
+	"UTC":	1734582190,
+	"Name":	"IPC",
+	"SmartMotionEnable":	true
+}
+--myboundary
+
+2024-12-19 09:53:18,506 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:18,506 - DEBUG - Received line: Content-Length: 147
+2024-12-19 09:53:18,506 - DEBUG - Received line: Code=VideoMotion;action=Start;index=0;data={
+2024-12-19 09:53:18,506 - DEBUG - Received line: 	"LocaleTime":	"2024-12-19 12:23:13",
+2024-12-19 09:53:18,506 - DEBUG - Received line: 	"UTC":	1734582193,
+2024-12-19 09:53:18,506 - DEBUG - Received line: 	"Name":	"IPC",
+2024-12-19 09:53:18,506 - DEBUG - Received line: 	"SmartMotionEnable":	true
+2024-12-19 09:53:18,507 - DEBUG - Received line: }
+2024-12-19 09:53:18,507 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:18,507 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:18,507 - DEBUG - Parsing buffer: Content-Type: text/plain
+Content-Length: 147
+Code=VideoMotion;action=Start;index=0;data={
+	"LocaleTime":	"2024-12-19 12:23:13",
+	"UTC":	1734582193,
+	"Name":	"IPC",
+	"SmartMotionEnable":	true
+}
+--myboundary
+
+2024-12-19 09:53:18,507 - INFO - Motion detected by FMCG wall
+2024-12-19 09:53:18,507 - INFO - Processing message: 
+🚨 Motion Detected at urmedz galaxy store!
+
+📅 Local Time: 2024-12-19 12:23:13
+📍 Name: FMCG wall
+🤖 Smart Motion Enabled: True
+
+2024-12-19 09:53:18,509 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2024-12-19 09:53:18,510 - DEBUG - Persistent queue saved to disk.
+2024-12-19 09:53:18,510 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:18,510 - DEBUG - Received line: Content-Length: 9
+2024-12-19 09:53:18,510 - DEBUG - Received line: Heartbeat
+2024-12-19 09:53:18,510 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:18,510 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:18,510 - DEBUG - Parsing buffer: Content-Type: text/plain
+Content-Length: 9
+Heartbeat
+--myboundary
+
+2024-12-19 09:53:18,511 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:18,511 - DEBUG - Received line: Content-Length: 146
+2024-12-19 09:53:19,576 - DEBUG - https://api.telegram.org:443 "POST /bot7802711134:AAELuoLMl9mXncmOuAdYjU_Kw4eHKCdYkT8/sendMessage HTTP/11" 200 419
+2024-12-19 09:53:19,577 - INFO - Message sent to Telegram successfully
+2024-12-19 09:53:19,578 - DEBUG - Persistent queue saved to disk.
+2024-12-19 09:53:24,384 - DEBUG - Received line: Code=VideoMotion;action=Stop;index=0;data={
+2024-12-19 09:53:24,385 - DEBUG - Received line: 	"LocaleTime":	"2024-12-19 12:23:19",
+2024-12-19 09:53:24,385 - DEBUG - Received line: 	"UTC":	1734582199,
+2024-12-19 09:53:24,385 - DEBUG - Received line: 	"Name":	"IPC",
+2024-12-19 09:53:24,386 - DEBUG - Received line: 	"SmartMotionEnable":	true
+2024-12-19 09:53:24,386 - DEBUG - Received line: }
+2024-12-19 09:53:24,386 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:24,386 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:24,386 - DEBUG - Parsing buffer: Content-Type: text/plain
+Content-Length: 146
+Code=VideoMotion;action=Stop;index=0;data={
+	"LocaleTime":	"2024-12-19 12:23:19",
+	"UTC":	1734582199,
+	"Name":	"IPC",
+	"SmartMotionEnable":	true
+}
+--myboundary
+
+2024-12-19 09:53:24,387 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:24,387 - DEBUG - Received line: Content-Length: 9
+2024-12-19 09:53:24,387 - DEBUG - Received line: Heartbeat
+2024-12-19 09:53:24,387 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:24,387 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:24,387 - DEBUG - Parsing buffer: Content-Type: text/plain
+Content-Length: 9
+Heartbeat
+--myboundary
+
+2024-12-19 09:53:24,387 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:24,387 - DEBUG - Received line: Content-Length: 147
+2024-12-19 09:53:24,387 - DEBUG - Received line: Code=VideoMotion;action=Start;index=0;data={
+2024-12-19 09:53:24,387 - DEBUG - Received line: 	"LocaleTime":	"2024-12-19 12:23:19",
+2024-12-19 09:53:24,387 - DEBUG - Received line: 	"UTC":	1734582199,
+2024-12-19 09:53:24,387 - DEBUG - Received line: 	"Name":	"IPC",
+2024-12-19 09:53:24,387 - DEBUG - Received line: 	"SmartMotionEnable":	true
+2024-12-19 09:53:24,387 - DEBUG - Received line: }
+2024-12-19 09:53:24,387 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:24,387 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:24,388 - DEBUG - Parsing buffer: Content-Type: text/plain
+Content-Length: 147
+Code=VideoMotion;action=Start;index=0;data={
+	"LocaleTime":	"2024-12-19 12:23:19",
+	"UTC":	1734582199,
+	"Name":	"IPC",
+	"SmartMotionEnable":	true
+}
+--myboundary
+
+2024-12-19 09:53:24,388 - INFO - Motion detected by FMCG wall
+2024-12-19 09:53:24,388 - INFO - Processing message: 
+🚨 Motion Detected at urmedz galaxy store!
+
+📅 Local Time: 2024-12-19 12:23:19
+📍 Name: FMCG wall
+🤖 Smart Motion Enabled: True
+
+2024-12-19 09:53:24,390 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2024-12-19 09:53:24,390 - DEBUG - Persistent queue saved to disk.
+2024-12-19 09:53:24,390 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:24,390 - DEBUG - Received line: Content-Length: 9
+2024-12-19 09:53:24,390 - DEBUG - Received line: Heartbeat
+2024-12-19 09:53:24,390 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:24,390 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:24,390 - DEBUG - Parsing buffer: Content-Type: text/plain
+Content-Length: 9
+Heartbeat
+--myboundary
+
+2024-12-19 09:53:25,259 - DEBUG - https://api.telegram.org:443 "POST /bot7802711134:AAELuoLMl9mXncmOuAdYjU_Kw4eHKCdYkT8/sendMessage HTTP/11" 200 419
+2024-12-19 09:53:25,260 - INFO - Message sent to Telegram successfully
+2024-12-19 09:53:25,262 - DEBUG - Persistent queue saved to disk.
+2024-12-19 09:53:28,155 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:28,156 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:28,156 - DEBUG - Parsing buffer: --myboundary
+
+2024-12-19 09:53:28,156 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:28,157 - DEBUG - Received line: Content-Length: 9
+2024-12-19 09:53:28,157 - DEBUG - Received line: Heartbeat
+2024-12-19 09:53:28,158 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:28,158 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:28,158 - DEBUG - Parsing buffer: Content-Type: text/plain
+Content-Length: 9
+Heartbeat
+--myboundary
+
+2024-12-19 09:53:28,158 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:28,158 - DEBUG - Received line: Content-Length: 9
+2024-12-19 09:53:28,158 - DEBUG - Received line: Heartbeat
+2024-12-19 09:53:28,158 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:28,158 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:28,158 - DEBUG - Parsing buffer: Content-Type: text/plain
+Content-Length: 9
+Heartbeat
+--myboundary
+
+2024-12-19 09:53:28,158 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:28,159 - DEBUG - Received line: Content-Length: 9
+2024-12-19 09:53:28,159 - DEBUG - Received line: Heartbeat
+2024-12-19 09:53:28,159 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:28,159 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:28,159 - DEBUG - Parsing buffer: Content-Type: text/plain
+Content-Length: 9
+Heartbeat
+--myboundary
+
+2024-12-19 09:53:28,159 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:28,159 - DEBUG - Received line: Content-Length: 9
+2024-12-19 09:53:28,159 - DEBUG - Received line: Heartbeat
+2024-12-19 09:53:28,159 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:28,159 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:28,159 - DEBUG - Parsing buffer: Content-Type: text/plain
+Content-Length: 9
+Heartbeat
+--myboundary
+
+2024-12-19 09:53:28,159 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:28,159 - DEBUG - Received line: Content-Length: 9
+2024-12-19 09:53:28,159 - DEBUG - Received line: Heartbeat
+2024-12-19 09:53:28,159 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:28,160 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:28,160 - DEBUG - Parsing buffer: Content-Type: text/plain
+Content-Length: 9
+Heartbeat
+--myboundary
+
+2024-12-19 09:53:28,160 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:28,160 - DEBUG - Received line: Content-Length: 9
+2024-12-19 09:53:28,160 - DEBUG - Received line: Heartbeat
+2024-12-19 09:53:28,160 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:28,160 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:28,160 - DEBUG - Parsing buffer: Content-Type: text/plain
+Content-Length: 9
+Heartbeat
+--myboundary
+
+2024-12-19 09:53:28,160 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:28,160 - DEBUG - Received line: Content-Length: 9
+2024-12-19 09:53:32,897 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:32,897 - DEBUG - Received line: Content-Length: 146
+2024-12-19 09:53:32,898 - DEBUG - Received line: Code=VideoMotion;action=Stop;index=0;data={
+2024-12-19 09:53:32,898 - DEBUG - Received line: 	"LocaleTime":	"2024-12-19 12:23:24",
+2024-12-19 09:53:32,898 - DEBUG - Received line: 	"UTC":	1734582204,
+2024-12-19 09:53:32,898 - DEBUG - Received line: 	"Name":	"IPC",
+2024-12-19 09:53:32,898 - DEBUG - Received line: 	"SmartMotionEnable":	true
+2024-12-19 09:53:32,898 - DEBUG - Received line: }
+2024-12-19 09:53:32,898 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:32,898 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:32,898 - DEBUG - Parsing buffer: Content-Type: text/plain
+Content-Length: 146
+Code=VideoMotion;action=Stop;index=0;data={
+	"LocaleTime":	"2024-12-19 12:23:24",
+	"UTC":	1734582204,
+	"Name":	"IPC",
+	"SmartMotionEnable":	true
+}
+--myboundary
+
+2024-12-19 09:53:32,898 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:32,899 - DEBUG - Received line: Content-Length: 9
+2024-12-19 09:53:32,899 - DEBUG - Received line: Heartbeat
+2024-12-19 09:53:32,899 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:32,899 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:32,899 - DEBUG - Parsing buffer: Content-Type: text/plain
+Content-Length: 9
+Heartbeat
+--myboundary
+
+2024-12-19 09:53:32,899 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:32,899 - DEBUG - Received line: Content-Length: 147
+2024-12-19 09:53:32,899 - DEBUG - Received line: Code=VideoMotion;action=Start;index=0;data={
+2024-12-19 09:53:32,899 - DEBUG - Received line: 	"LocaleTime":	"2024-12-19 12:23:31",
+2024-12-19 09:53:32,899 - DEBUG - Received line: 	"UTC":	1734582211,
+2024-12-19 09:53:32,899 - DEBUG - Received line: 	"Name":	"IPC",
+2024-12-19 09:53:32,899 - DEBUG - Received line: 	"SmartMotionEnable":	true
+2024-12-19 09:53:32,899 - DEBUG - Received line: }
+2024-12-19 09:53:32,899 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:32,900 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:32,900 - DEBUG - Parsing buffer: Content-Type: text/plain
+Content-Length: 147
+Code=VideoMotion;action=Start;index=0;data={
+	"LocaleTime":	"2024-12-19 12:23:31",
+	"UTC":	1734582211,
+	"Name":	"IPC",
+	"SmartMotionEnable":	true
+}
+--myboundary
+
+2024-12-19 09:53:32,900 - INFO - Motion detected by FMCG wall
+2024-12-19 09:53:32,900 - INFO - Processing message: 
+🚨 Motion Detected at urmedz galaxy store!
+
+📅 Local Time: 2024-12-19 12:23:31
+📍 Name: FMCG wall
+🤖 Smart Motion Enabled: True
+
+2024-12-19 09:53:32,901 - DEBUG - Persistent queue saved to disk.
+2024-12-19 09:53:32,903 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2024-12-19 09:53:33,959 - DEBUG - https://api.telegram.org:443 "POST /bot7802711134:AAELuoLMl9mXncmOuAdYjU_Kw4eHKCdYkT8/sendMessage HTTP/11" 200 419
+2024-12-19 09:53:33,960 - INFO - Message sent to Telegram successfully
+2024-12-19 09:53:33,961 - DEBUG - Persistent queue saved to disk.
+2024-12-19 09:53:56,233 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:56,233 - DEBUG - Received line: Content-Length: 9
+2024-12-19 09:53:56,234 - DEBUG - Received line: Heartbeat
+2024-12-19 09:53:56,234 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:56,235 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:56,235 - DEBUG - Parsing buffer: Content-Type: text/plain
+Content-Length: 9
+Heartbeat
+--myboundary
+
+2024-12-19 09:53:56,235 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:56,235 - DEBUG - Received line: Content-Length: 9
+2024-12-19 09:53:56,236 - DEBUG - Received line: Heartbeat
+2024-12-19 09:53:56,236 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:56,236 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:56,237 - DEBUG - Parsing buffer: Content-Type: text/plain
+Content-Length: 9
+Heartbeat
+--myboundary
+
+2024-12-19 09:53:56,237 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:56,237 - DEBUG - Received line: Content-Length: 9
+2024-12-19 09:53:56,237 - DEBUG - Received line: Heartbeat
+2024-12-19 09:53:56,237 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:56,237 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:56,237 - DEBUG - Parsing buffer: Content-Type: text/plain
+Content-Length: 9
+Heartbeat
+--myboundary
+
+2024-12-19 09:53:56,237 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:56,238 - DEBUG - Received line: Content-Length: 9
+2024-12-19 09:53:56,238 - DEBUG - Received line: Heartbeat
+2024-12-19 09:53:56,238 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:56,238 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:56,239 - DEBUG - Parsing buffer: Content-Type: text/plain
+Content-Length: 9
+Heartbeat
+--myboundary
+
+2024-12-19 09:53:56,239 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:56,239 - DEBUG - Received line: Content-Length: 9
+2024-12-19 09:53:56,239 - DEBUG - Received line: Heartbeat
+2024-12-19 09:53:56,239 - DEBUG - Received line: --myboundary
+2024-12-19 09:53:56,239 - DEBUG - Boundary detected in stream
+2024-12-19 09:53:56,240 - DEBUG - Parsing buffer: Content-Type: text/plain
+Content-Length: 9
+Heartbeat
+--myboundary
+
+2024-12-19 09:53:56,240 - DEBUG - Received line: Content-Type: text/plain
+2024-12-19 09:53:56,240 - DEBUG - Received line: Content-Length: 146
+2024-12-19 09:53:56,240 - DEBUG - Received line: Code=VideoMotion;action=Stop;index=0;data={
+2024-12-19 09:53:56,240 - DEBUG - Received line: 	"LocaleTime":	"2024-12-19 12:23:56",
+2024-12-19 09:53:56,241 - DEBUG - Received line: 	"UTC":	1734582236,
+2024-12-19 09:53:59,531 - DEBUG - Persistent queue saved to disk.
+2024-12-19 09:53:59,531 - INFO - Monitoring stopped by user
